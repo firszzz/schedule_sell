@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 
 /* Box sizing rules */
 *,
@@ -78,7 +78,8 @@ select {
 }
 
 body {
-    background: #f3eee4;
+    background: white;
+    overflow-x: hidden;
 }
 
 nav {
@@ -93,7 +94,7 @@ nav {
 
 a {
     color: #1c2334;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: clamp(1.09rem,1rem + .47vw,1.33rem);
     text-decoration: none;
     font-weight: bold;
@@ -142,35 +143,53 @@ li {
 }
 
 .pair {
-    height: 6rem;
-    background: #efefef;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+    height: 8rem;
     border-radius: 0.5rem;
-    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: .25rem;
+    background: ghostwhite;
 }
 .pair:hover {
     cursor: pointer;
     border: 1px solid black;
-    border-bottom: 4px solid #bb1450;
 }
 
 .up {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background: ghostwhite;
 }
 
 .down {
     text-align: center;
+    height: 70%;
+    width: 100%;
+    background: lightsteelblue;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .day_name {
     text-align: center;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
     color: #1c2334;
     font-size: clamp(1.09rem,1rem + .47vw,1.33rem);
+}
+
+.name {
+    font-weight: bold;
 }
 
 .nav_menu {
@@ -182,7 +201,7 @@ li {
 }
 
 .selected_week {
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: bold;
     font-size: clamp(0.6rem, 0.7rem + .47vw, 1.33rem);
 }
