@@ -39,6 +39,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -114,6 +115,7 @@ ul {
 
 li {
     list-style: none;
+    min-width: max-content;
 }
 
 .logo {
@@ -166,6 +168,7 @@ li {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     background: ghostwhite;
+    font-weight: bold;
 }
 
 .down {
@@ -178,6 +181,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: bold;
 }
 
 .day_name {
@@ -188,16 +192,21 @@ li {
     font-size: clamp(1.09rem,1rem + .47vw,1.33rem);
 }
 
-.name {
-    font-weight: bold;
-}
-
 .nav_menu {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 1rem;
+}
+
+.schedule_group {
+    width: max-content;
+}
+
+.group {
+    width: max-content;
+    padding: 0 .25rem;
 }
 
 .selected_week {

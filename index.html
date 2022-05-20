@@ -2,34 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>schedule</title>
+    <title>Расписание</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/calendar-note.svg" type="image/x-icon">
 </head>
 <body>
 
     <nav>
-        <a href="#">
-            <img src="img/calendar-note.svg" class="logo">
-        </a>
+        <div class="nav_menu">
+            <a href="index.html">
+                <img src="img/calendar-note.svg" class="logo">
+            </a>
+
+            <form class="schedule_group">
+                <select name="group" class="group">
+                    <option value="">Выберите учебную группу</option>
+                    <option value="1">Б9120-09.03.03ПИКД</option>
+                    <option value="2">Б9120-09.03.03ПИЭ</option>
+                    <option value="3">Б9120-09.03.03ПИУП</option>
+                    <option value="4">Б9120-09.03.02ПИ</option>
+                </select>
+                <input type="submit">
+            </form>
+        </div>
 
         <ul>
             <li>
-                <a href="index.html">Расписание</a>
+                <a href="admin.html">Админ панель</a>
             </li>
 
             <li>
-                <a href="admin.html">Админ панель</a>
+                <a href="index.html">Расписание</a>
             </li>
         </ul>
     </nav>
 
-    <div class="nav_menu">
-        <p class="arrow">&#9668;</p>
 
-        <p class="selected_week">28 Фев. &#8212; 5 Мар. 2022 г.</p>
-
-        <p class="arrow">&#9658;</p>
-    </div>
 
     <div class="content">
         <div class="week">
