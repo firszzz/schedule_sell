@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#">
+            <img src="img/calendar-note.svg" class="logo">
+        </a>
+
+        <ul>
+            <li>
+                <a href="index.html">Расписание</a>
+            </li>
+
+            <li>
+                <a href="admin.html">Админ панель</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="admin_main flex">
+
+        <div class="choose flex">
+
+            <h1 class="choose_title">Выбор элементов для пары</h1>
+
+            <form>
+                <select name="chet">
+                    <option value="">Выберите тип недели</option>
+                    <option value="1">Чётная неделя</option>
+                    <option value="2">Нечётная неделя</option>
+                </select>
+                <input type="submit">
+            </form>
+
+            <form>
+                <select name="day">
+                    <option value="">Выберите день недели</option>
+                    <option value="1">Понедельник</option>
+                    <option value="2">Вторник</option>
+                    <option value="3">Среда</option>
+                    <option value="4">Четверг</option>
+                    <option value="5">Пятница</option>
+                    <option value="6">Суббота</option>
+                </select>
+                <input type="submit">
+            </form>
+
+            <form>
+                <select name="time">
+                    <option value="">Выберите номер пары</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <input type="submit">
+            </form>
+
+            <form>
+                <select name="teacher">
+                    <option value="">Выберите преподавателя</option>
+                    <option value="1">Павленко Д.Р.</option>
+                    <option value="2">Никитина Е.Ю.</option>
+                    <option value="3">Кленин А.С.</option>
+                </select>
+                <input type="submit">
+            </form>
+
+            <form>
+                <select name="group">
+                    <option value="">Выберите учебную группу</option>
+                    <option value="1">Б9120-09.03.03ПИКД</option>
+                    <option value="2">Б9120-09.03.03ПИЭ</option>
+                    <option value="3">Б9120-09.03.03ПИУП</option>
+                    <option value="4">Б9120-09.03.02ПИ</option>
+                </select>
+                <input type="submit">
+            </form>
+
+            <form>
+                <select name="subject">
+                    <option value="">Выберите предмет</option>
+                    <option value="1">Програмная инженерия</option>
+                    <option value="2">Java-технологии</option>
+                    <option value="3">Системный анализ</option>
+                    <option value="4">Аналитическая геометрия</option>
+                </select>
+                <input type="submit">
+            </form>
+
+            <form>
+                <select name="room">
+                    <option value="">Выберите аудиторию</option>
+                    <option value="1">B212</option>
+                    <option value="2">D555</option>
+                    <option value="3">C421</option>
+                    <option value="4">D611</option>
+                    <option value="5">A322</option>
+                </select>
+                <input type="submit">
+            </form>
+
+        </div>
+
+
+        <div class="table flex">
+
+            <h1 class="table_title">Выбранные элементы</h1>
+
+            <div class="t_item flex">
+                <div class="left_t">
+                    <p>1. Тип недели</p>
+                </div>
+                <div class="right_t">Чётная</div>
+            </div>
+            <div class="t_item flex">
+                <div class="left_t">2. День недели</div>
+                <div class="right_t">Понедельник</div>
+            </div>
+            <div class="t_item flex">
+                <div class="left_t">3. Номер пары</div>
+                <div class="right_t">5</div>
+            </div>
+            <div class="t_item flex">
+                <div class="left_t">4. Преподаватель</div>
+                <div class="right_t">Кленин А.С.</div>
+            </div>
+            <div class="t_item flex">
+                <div class="left_t">5. Учебная группа</div>
+                <div class="right_t">Б9120-09.03.03ПИКД</div>
+            </div>
+            <div class="t_item flex">
+                <div class="left_t">6. Предмет</div>
+                <div class="right_t">Аналитическая геометрия</div>
+            </div>
+            <div class="t_item flex">
+                <div class="left_t">7. Аудитория</div>
+                <div class="right_t">B212</div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+</body>
+</html>
