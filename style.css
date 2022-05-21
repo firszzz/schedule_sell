@@ -195,7 +195,7 @@ li {
 .nav_menu {
     display: flex;
     width: 100%;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
